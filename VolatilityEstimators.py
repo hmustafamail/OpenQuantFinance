@@ -225,7 +225,7 @@ def volatility_mux(candles_dataframe, window=10, method="yang-zhang"):
             return parkinson_volatility(
                 high=candles_dataframe["high"],
                 low=candles_dataframe["low"],
-                window=window
+                window=window,
             )
 
         case "garman-klass":
@@ -235,7 +235,7 @@ def volatility_mux(candles_dataframe, window=10, method="yang-zhang"):
                 high=candles_dataframe["high"],
                 low=candles_dataframe["low"],
                 close=candles_dataframe["close"],
-                window=window
+                window=window,
             )
 
         case "rogers-satchell":
@@ -255,7 +255,7 @@ def volatility_mux(candles_dataframe, window=10, method="yang-zhang"):
                 high=candles_dataframe["high"],
                 low=candles_dataframe["low"],
                 close=candles_dataframe["close"],
-                window=window
+                window=window,
             )
 
         case "yang-zhang":
