@@ -11,9 +11,6 @@
 #
 # Author: Mustafa Hussain <h.mustafa.mail@gmail.com>
 #
-# Based on: Bennett, C., & Gil, M. A. (2012). Measuring Historical
-# Volatility. Santander.
-#
 # License: CC BY-SA https://creativecommons.org/licenses/by-sa/4.0/
 #
 # You are free to share and adapt as long as you give appropriate 
@@ -37,7 +34,7 @@ def parkinson_volatility(high, low, window=10):
     """
     Computes rolling Parkinson volatility.
 
-    Bennett, C., & Gil, M. A. (2012). Measuring Historical Volatility. Santander.
+    Parkinson, M. (1980). The extreme value method for estimating the variance of the rate of return. Journal of business, 61-65.
 
     Parameters:
     - high, low (pd.Series): High and low price series
@@ -61,7 +58,7 @@ def garman_klass_volatility(open_, high, low, close, window=10):
     """
     Computes Garman-Klass volatility over a rolling window.
 
-    Bennett, C., & Gil, M. A. (2012). Measuring Historical Volatility. Santander.
+    Garman, M. B., & Klass, M. J. (1980). On the estimation of security price volatilities from historical data. Journal of business, 67-78.
 
     Parameters:
     - open_, high, low, close (pd.Series): OHLC prices
@@ -91,7 +88,7 @@ def rogers_satchell_volatility(open_, high, low, close, window=10):
     """
     Computes Rogers-Satchell volatility over a rolling window.
 
-    Bennett, C., & Gil, M. A. (2012). Measuring Historical Volatility. Santander.
+    Rogers, L. C. G., & Satchell, S. E. (1991). Estimating variance from high, low and closing prices. The Annals of Applied Probability, 504-512.
 
     Parameters:
     - open_, high, low, close (pd.Series): OHLC price series
@@ -121,7 +118,7 @@ def garman_klass_yang_zhang_volatility(open_, high, low, close, window=10):
     """
     Computes Garman-Klass-Yang-Zhang volatility over a rolling window.
 
-    Bennett, C., & Gil, M. A. (2012). Measuring Historical Volatility. Santander.
+    Yang, D., & Zhang, Q. (2000). Drift‐independent volatility estimation based on high, low, open, and close prices. The Journal of Business, 73(3), 477-492.
 
     Parameters:
     - open_, high, low, close (pd.Series): OHLC prices
@@ -157,7 +154,7 @@ def yang_zhang_volatility(open_, high, low, close, window, alpha=1.34):
     """
     Computes rolling Yang-Zhang volatility.
 
-    Bennett, C., & Gil, M. A. (2012). Measuring Historical Volatility. Santander.
+    Yang, D., & Zhang, Q. (2000). Drift‐independent volatility estimation based on high, low, open, and close prices. The Journal of Business, 73(3), 477-492.
 
     Parameters:
     - open_, high, low, close (pd.Series): OHLC
@@ -203,9 +200,11 @@ def volatility_mux(candles_dataframe, window=10, method="yang-zhang"):
     - window: Period of volatility estimation.
     - method: Volatility estimation method. Options: "parkinson", "garman-klass", "rogers-satchell", "garman-klass-yang-zhang", "yang-zhang".
 
-    Methods are defined in the following paper:
+    Methods are referenced by the following paper:
 
     Bennett, C., & Gil, M. A. (2012). Measuring Historical Volatility. Santander.
+
+    Where the formulae offered by Bennett and Gil appeared to differ from the original works, I did my best to faithfully implement the original formulae.
 
     Returns a Pandas series of volatility estimates using the specified method (not annualized).
     """
