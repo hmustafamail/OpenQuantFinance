@@ -3,7 +3,7 @@ import time
 import csv
 import numpy as np
 from statsmodels.stats.stattools import medcouple as sm_medcouple
-from medcouple_nlogn import medcouple_nlogn
+from MedcoupleNLogN import medcouple_nlogn
 
 DATA_DIR = "data"
 OUTPUT_CSV = "medcouple_comparison.csv"
