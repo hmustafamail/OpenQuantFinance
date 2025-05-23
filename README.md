@@ -10,7 +10,7 @@ A collection of open-source code for quantitative finance.
 Author: Mustafa Hussain <h.mustafa.mail@gmail.com>
 
 ## License
-CC BY-SA <https://creativecommons.org/licenses/by-sa/4.0/>
+CC BY-SA <https://creativecommons.org/licenses/by-sa/4.0/> unless otherwise noted.
 
 You are free to share and adapt as long as you give appropriate 
 credit to the author and any derivatives of this work are shared 
