@@ -7,7 +7,7 @@ A collection of open-source code for quantitative finance.
   - pandas
   - numpy
 
-Author: Mustafa Hussain <h.mustafa.mail@gmail.com>
+Author: Mustafa I. Hussain <h.mustafa.mail@gmail.com>
 
 ## License
 CC BY-SA <https://creativecommons.org/licenses/by-sa/4.0/> unless otherwise noted.
