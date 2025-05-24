@@ -8,7 +8,7 @@
 
 ## What I did
 - Revised the code for Python 3
-- Validated it against the (quadratic) statsmodels implementation data
+- Validated it against the (quadratic) statsmodels implementation
   - Data were provided by the previous author
   - RMSE was on the order of 1e-4
 - Posted the revised code on Github on May 23, 2025
