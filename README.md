@@ -1,8 +1,5 @@
 # OpenQuantFinance
-A collection of open-source code for quantitative finance. Includes, for example:
-
-- Yang-Zhang Volatility estimator
-- An efficient (N*log(N)) implementation of Medcouple
+A collection of open-source code for quantitative finance.
 
 ## Python Version and Dependencies
 - Python Version: 3.12
