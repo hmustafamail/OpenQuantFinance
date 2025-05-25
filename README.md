@@ -8,3 +8,5 @@ A collection of open-source code for quantitative finance.
   - numpy
 
 Author: Mustafa I. Hussain <h.mustafa.mail@gmail.com>
+
+This project is licensed under the terms of the MIT license.
